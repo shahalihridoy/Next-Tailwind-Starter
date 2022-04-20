@@ -1,9 +1,9 @@
+import "@styles/global.css";
 import Head from "next/head";
 import Router from "next/router";
 import nProgress from "nprogress";
 import "nprogress/nprogress.css";
 import React, { Fragment } from "react";
-import "../styles/global.css";
 
 Router.events.on("routeChangeStart", () => nProgress.start());
 Router.events.on("routeChangeComplete", () => nProgress.done());
